@@ -1,0 +1,9 @@
+# files:
+*.exe
+*.spec
+# folders:
+dist
+build
+setup
+LOG
+__pycache__
