@@ -13,7 +13,7 @@ ftpConfig = config['ftp']
 scriptConfig = config['script']
 
 date = datetime.datetime.now()
-dateConcat = str(date.year) + str(date.month) + str(date.day)
+dateConcat = str(date.year) + (str(date.month) if str(date.month) == 2 else '0' + str(date.month)) + (str(date.day) if str(date.day) == 2 else '0' + str(date.day))
 CONST_LOG_FILE = 'LOG/' + scriptConfig['log']
 CONST_BACKUP_FILE_BEFORE = 'LOG/before/backup_files_' + dateConcat + ".log"
 CONST_BACKUP_FILE_AFTER = 'LOG/after/backup_files_' + dateConcat + ".log"

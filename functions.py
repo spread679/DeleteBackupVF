@@ -93,7 +93,9 @@ def getBakupFile(backupFile):
             if tmpSpecialDate < specialDate or (tmpSpecialDate == specialDate and tmpSpecialHour < specialHour):
                 specialDate = tmpSpecialDate
                 specialHour = tmpSpecialHour
-                backuFile = permissionSplitted[8]
+                # prepare the filename
+                listNameFile = permissionSplitted[8:]
+                backuFile = ' '.join(listNameFile)
         else:
             continue
 
