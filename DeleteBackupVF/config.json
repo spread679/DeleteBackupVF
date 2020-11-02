@@ -1,0 +1,14 @@
+{
+    "ftp":{
+        "host":"<ftp>",
+        "user":"<username>",
+        "pswd":"<password>",
+        "port":"21",
+        "path": [
+			"<your paths divide by comma(,)>"
+		]
+    },
+    "script":{
+        "log":"delete_backup.log"
+    }
+}
